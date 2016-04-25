@@ -1,0 +1,16 @@
+---
+layout: me
+---
+
+
+
+<h1> Alexyo </h1>
+
+<ul>
+    {% for me in site.categories.journey limit:2 %}
+    <li>
+        <a href="">{{me.title}}</a>
+        <p>{{me.meta}}Here is something new about Me</p>
+    </li>
+    {% endfor %}
+</ul>
